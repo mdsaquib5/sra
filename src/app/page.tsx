@@ -3,6 +3,7 @@ import Experience from "@/components/ui/Experience";
 import Hero from "@/components/ui/Hero";
 import Footer from "@/components/layout/Footer";
 import Shorts from "@/components/ui/Shorts";
+import Book from "@/components/ui/Book";
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
             <Hero />
             <About />
             <Experience />
+            <Book />
             <Shorts />
             <Footer />
         </main>

@@ -1026,3 +1026,135 @@
         right: 0;
     }
 }
+
+/* Book Section Styles */
+.book-section {
+    background: var(--bg-main);
+    position: relative;
+    overflow: hidden;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-display {
+    margin-top: 50px;
+    perspective: 2000px;
+    width: 350px;
+    height: 500px;
+    filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.15));
+}
+
+.book-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.book-display:hover .book-wrapper {
+    transform: rotateY(-180deg);
+}
+
+.book-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 5px 15px 15px 5px;
+    overflow: hidden;
+}
+
+.book-front {
+    background: #fff;
+    z-index: 2;
+}
+
+.book-back {
+    background: #fdfdfd;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.book-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-content-back {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.book-back-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-buy-link {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white !important;
+    padding: 14px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition-smooth);
+    box-shadow: 0 10px 20px rgba(135, 80, 247, 0.2);
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.book-buy-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(135, 80, 247, 0.4);
+}
+
+.book-description {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.book-back h3 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .book-display {
+        width: 280px;
+        height: 400px;
+    }
+
+    .book-back h3 {
+        font-size: 1.4rem;
+    }
+
+    .book-description {
+        font-size: 0.9rem;
+    }
+}

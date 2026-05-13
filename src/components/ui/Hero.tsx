@@ -12,6 +12,7 @@ const Hero = () => {
         "L&D Manager",
         "Mentor",
         "Speaker",
+        "Author",
         "Trainer"
     ];
 

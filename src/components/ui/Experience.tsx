@@ -7,21 +7,21 @@ const Experience = () => {
         {
             date: "2018 - PRESENT",
             role: "L&D Manager & Training Head",
-            company: "Aviation Excellence Center",
+            company: "Reputed Institute",
             desc: "Leading flagship training programs and DGCA compliance. Architected digital learning platforms that increased trainee engagement by 40%.",
             side: "left"
         },
         {
             date: "2012 - 2018",
             role: "Senior Aviation Trainer & Auditor",
-            company: "Global Wings Academy",
+            company: "Reputed Institute",
             desc: "Spearheaded regulatory audits and instructor development. Maintained 100% audit compliance for 6 consecutive years.",
             side: "right"
         },
         {
             date: "2008 - 2012",
             role: "Lead Ground Instructor",
-            company: "Skyline Training Institute",
+            company: "Reputed Institute",
             desc: "Delivered ground school excellence. Mentored over 500+ professionals into active aviation careers.",
             side: "left"
         }
