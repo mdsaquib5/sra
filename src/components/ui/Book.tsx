@@ -25,7 +25,7 @@ const Book = () => {
                                 className="book-back-bg"
                             />
                             <div className="book-content-back">
-                                <a href="#" className="book-buy-link">Buy Now</a>
+                                <a href="https://amzn.in/d/04skefdS" target='_blank' className="book-buy-link">Buy Now</a>
                             </div>
                         </div>
                     </div>
