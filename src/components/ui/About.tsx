@@ -69,7 +69,7 @@ const About = () => {
                         <div className="image-stack">
                             <div className="image-main">
                                 <Image
-                                    src="/images/about.webp"
+                                    src="/images/about-1.webp"
                                     alt="The man behind the runway"
                                     width={600}
                                     height={700}

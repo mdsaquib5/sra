@@ -46,10 +46,10 @@ const Header = () => {
 
                     <div className="header-actions">
                         <div className="header-socials desktop-only">
-                            <motion.a 
-                                href="https://linkedin.com" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <motion.a
+                                href="https://www.linkedin.com/in/syed-rumman-akhtar-b73027128"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="header-social-icon"
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -58,10 +58,10 @@ const Header = () => {
                             >
                                 <FiLinkedin />
                             </motion.a>
-                            <motion.a 
-                                href="https://instagram.com" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <motion.a
+                                href="https://www.instagram.com/rumman.vlogs?igsh=MTIxcmlkZnc0eWsxNQ%3D%3D"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="header-social-icon"
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -70,10 +70,10 @@ const Header = () => {
                             >
                                 <FiInstagram />
                             </motion.a>
-                            <motion.a 
-                                href="https://youtube.com" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <motion.a
+                                href="https://www.youtube.com/@lifemattersIndia"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="header-social-icon"
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -83,43 +83,9 @@ const Header = () => {
                                 <FiYoutube />
                             </motion.a>
                         </div>
-
-                        {/* Mobile Toggle */}
-                        <button 
-                            className="mobile-toggle"
-                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        >
-                            {isMobileMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
-                        </button>
                     </div>
                 </nav>
             </div>
-
-            {/* Mobile Menu Overlay */}
-            <AnimatePresence>
-                {isMobileMenuOpen && (
-                    <motion.div 
-                        className="mobile-menu"
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <ul className="mobile-nav-links">
-                            {navLinks.map((link) => (
-                                <li key={link.name}>
-                                    <Link 
-                                        href={link.href}
-                                        onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                        {link.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </motion.div>
-                )}
-            </AnimatePresence>
         </header>
     );
 };

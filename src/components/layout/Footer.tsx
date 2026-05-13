@@ -15,9 +15,9 @@ const Footer = () => {
                         </Link>
 
                         <div className="footer-socials">
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon-box"><FiLinkedin /></a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon-box"><FiInstagram /></a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon-box"><FiYoutube /></a>
+                            <a href="https://www.linkedin.com/in/syed-rumman-akhtar-b73027128" target="_blank" rel="noopener noreferrer" className="social-icon-box"><FiLinkedin /></a>
+                            <a href="https://www.instagram.com/rumman.vlogs?igsh=MTIxcmlkZnc0eWsxNQ%3D%3D" target="_blank" rel="noopener noreferrer" className="social-icon-box"><FiInstagram /></a>
+                            <a href="https://www.youtube.com/@lifemattersIndia" target="_blank" rel="noopener noreferrer" className="social-icon-box"><FiYoutube /></a>
                         </div>
                     </div>
 

@@ -65,7 +65,7 @@ const Experience = () => {
                             {/* Card */}
                             <motion.div
                                 className="timeline-card"
-                                initial={{ opacity: 0, x: item.side === 'left' ? -50 : 50 }}
+                                initial={{ opacity: 0, x: item.side === 'right' ? -50 : 50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
