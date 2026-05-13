@@ -10,7 +10,7 @@ const Experience = () => {
             role: "L&D Manager & Training Head",
             company: "Aviation Excellence Center",
             desc: "Leading flagship training programs and DGCA compliance. Architected digital learning platforms that increased trainee engagement by 40%.",
-            side: "left"
+            side: "right"
         },
         {
             date: "2012 - 2018",
@@ -24,7 +24,7 @@ const Experience = () => {
             role: "Lead Ground Instructor",
             company: "Skyline Training Institute",
             desc: "Delivered ground school excellence. Mentored over 500+ professionals into active aviation careers.",
-            side: "left"
+            side: "right"
         }
     ];
 

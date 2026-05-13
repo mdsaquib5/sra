@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
-import { FiArrowUpRight, FiCheckCircle } from 'react-icons/fi';
+import { FiArrowUpRight } from 'react-icons/fi';
 import { FaPlaneDeparture, FaGraduationCap, FaCertificate } from 'react-icons/fa';
 
 const CountUp = ({ end, duration = 2 }: { end: number, duration?: number }) => {
@@ -58,7 +58,6 @@ const About = () => {
             <div className="container">
                 <div className="about-wrapper">
 
-                    {/* Left Column - Image */}
                     <motion.div
                         className="about-image-container"
                         initial={{ opacity: 0, x: -50 }}
