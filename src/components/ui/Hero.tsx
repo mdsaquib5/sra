@@ -87,7 +87,7 @@ const Hero = () => {
                         <span className="intro-text">Hi, I am</span>
                         <h1 className="hero-name">Syed Rumman Akhtar</h1>
                         <div className="designation-box">
-                            I am a <span className="gradient-text ml-10">{displayText}</span>
+                            I am an <span className="gradient-text ml-10">{displayText}</span>
                             <span className="cursor"></span>
                         </div>
                         <p className="hero-desc">
