@@ -36,20 +36,20 @@ const CountUp = ({ end, duration = 2 }: { end: number, duration?: number }) => {
 
 const About = () => {
     const features = [
-        { 
-            icon: <FaPlaneDeparture />, 
-            text: "Aviation Journey", 
-            desc: "From classroom to cockpit-grade programs." 
+        {
+            icon: <FaPlaneDeparture />,
+            text: "Aviation Journey",
+            desc: "From classroom to cockpit-grade programs."
         },
-        { 
-            icon: <FaGraduationCap />, 
-            text: "Mentor's Mindset", 
-            desc: "Building confidence in industry-ready professionals." 
+        {
+            icon: <FaGraduationCap />,
+            text: "Mentor's Mindset",
+            desc: "Building confidence in industry-ready professionals."
         },
-        { 
-            icon: <FaCertificate />, 
-            text: "Standards & Impact", 
-            desc: "DGCA-aligned audits and measurable outcomes." 
+        {
+            icon: <FaCertificate />,
+            text: "Standards & Impact",
+            desc: "DGCA-aligned audits and measurable outcomes."
         }
     ];
 
@@ -57,9 +57,9 @@ const About = () => {
         <section className="about-section" id="about">
             <div className="container">
                 <div className="about-wrapper">
-                    
+
                     {/* Left Column - Image */}
-                    <motion.div 
+                    <motion.div
                         className="about-image-container"
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -68,10 +68,10 @@ const About = () => {
                     >
                         <div className="image-stack">
                             <div className="image-main">
-                                <Image 
-                                    src="/images/about-mentor.png" 
-                                    alt="The man behind the runway" 
-                                    width={600} 
+                                <Image
+                                    src="/images/about.webp"
+                                    alt="The man behind the runway"
+                                    width={600}
                                     height={700}
                                     className="img-cover"
                                 />
@@ -81,7 +81,7 @@ const About = () => {
                     </motion.div>
 
                     {/* Right Column - Content */}
-                    <motion.div 
+                    <motion.div
                         className="about-content"
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -92,10 +92,10 @@ const About = () => {
                         <h2 className="section-title text-left mb-25">
                             The man behind <span className="outlined-text">the runway.</span>
                         </h2>
-                        
+
                         <p className="hero-desc mb-40">
-                            Syed Rumman Akhtar is a Learning & Development leader who has spent his career 
-                            turning aviation classrooms into launchpads. Calm in audits, exacting in curriculum, 
+                            Syed Rumman Akhtar is a Learning & Development leader who has spent his career
+                            turning aviation classrooms into launchpads. Calm in audits, exacting in curriculum,
                             generous in mentorship — his work blends regulatory rigor with the human craft of teaching.
                         </p>
 
@@ -117,7 +117,7 @@ const About = () => {
                             <a href="#experience" className="btn-primary">
                                 Learn More <FiArrowUpRight size={20} />
                             </a>
-                            
+
                             <div className="experience-display">
                                 <div className="exp-box">
                                     <span className="exp-number">

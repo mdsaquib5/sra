@@ -12,10 +12,13 @@ import 'swiper/css/navigation';
 
 const reels = [
     { id: 1, videoUrl: "/video1.mp4" },
-    { id: 2, videoUrl: "/video1.mp4" },
-    { id: 3, videoUrl: "/video1.mp4" },
-    { id: 4, videoUrl: "/video1.mp4" },
-    { id: 5, videoUrl: "/video1.mp4" },
+    { id: 2, videoUrl: "/video2.mp4" },
+    { id: 3, videoUrl: "/video3.mp4" },
+    { id: 4, videoUrl: "/video4.mp4" },
+    { id: 5, videoUrl: "/video5.mp4" },
+    { id: 6, videoUrl: "/video6.mp4" },
+    { id: 7, videoUrl: "/video7.mp4" },
+    { id: 8, videoUrl: "/video8.mp4" },
 ];
 
 const VideoCard = ({ src, isActive }: { src: string; isActive: boolean }) => {

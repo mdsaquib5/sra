@@ -110,7 +110,7 @@ const Hero = () => {
                             transition={{ duration: 1, ease: "easeOut" }}
                         >
                             <Image
-                                src="/images/mentor.png"
+                                src="/images/profile.webp"
                                 alt="Syed Rumman Akhtar"
                                 width={450}
                                 height={550}
