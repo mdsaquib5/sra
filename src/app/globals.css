@@ -1040,8 +1040,45 @@
     align-items: center;
 }
 
-.book-display {
+.book-showcase {
+    display: flex;
+    align-items: center;
+    gap: 40px;
     margin-top: 50px;
+}
+
+.book-nav-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 1px solid rgba(135, 80, 247, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+
+.book-nav-btn:hover:not(.disabled) {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(135, 80, 247, 0.2);
+}
+
+.book-nav-btn.disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+    filter: grayscale(1);
+    box-shadow: none;
+}
+
+.book-display {
     perspective: 2000px;
     width: 350px;
     height: 500px;
@@ -1057,9 +1094,10 @@
     cursor: pointer;
 }
 
-.book-display:hover .book-wrapper {
+.book-wrapper.is-flipped {
     transform: rotateY(-180deg);
 }
+
 
 .book-side {
     position: absolute;
@@ -1145,6 +1183,16 @@
 }
 
 @media (max-width: 768px) {
+    .book-showcase {
+        gap: 15px;
+    }
+
+    .book-nav-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+
     .book-display {
         width: 280px;
         height: 400px;
