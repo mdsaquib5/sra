@@ -121,7 +121,7 @@ const About = () => {
                             <div className="experience-display">
                                 <div className="exp-box">
                                     <span className="exp-number">
-                                        <CountUp end={16} />+
+                                        <CountUp end={20} />+
                                     </span>
                                     <span className="exp-label">Years of <br /> Experience</span>
                                 </div>

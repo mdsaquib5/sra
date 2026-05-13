@@ -46,7 +46,7 @@ const Hero = () => {
 
     const stats = [
         {
-            value: "16+",
+            value: "20+",
             label: "Years in Aviation",
             icon: <FaPlane />,
             delay: 0.2

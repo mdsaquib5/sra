@@ -848,6 +848,10 @@
         flex-direction: column;
     }
 
+    .about-wrapper .section-title {
+        justify-content: center;
+    }
+
     .feature-item {
         flex-direction: column;
         align-items: center;
