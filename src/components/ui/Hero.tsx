@@ -8,12 +8,12 @@ import { FaPlane, FaChalkboardTeacher, FaUsers, FaClipboardCheck } from 'react-i
 
 const Hero = () => {
     const roles = [
-        "Aviation Professional",
-        "L&D Manager",
-        "Mentor",
-        "Speaker",
-        "Author",
-        "Trainer"
+        "an Aviation Professional",
+        "a L&D Manager",
+        "a Mentor",
+        "a Speaker",
+        "an Author",
+        "a Trainer"
     ];
 
     const [currentRole, setCurrentRole] = useState(0);
@@ -87,7 +87,7 @@ const Hero = () => {
                         <span className="intro-text">Hi, I am</span>
                         <h1 className="hero-name">Syed Rumman Akhtar</h1>
                         <div className="designation-box">
-                            I am an <span className="gradient-text ml-10">{displayText}</span>
+                            I am <span className="gradient-text ml-10">{displayText}</span>
                             <span className="cursor"></span>
                         </div>
                         <p className="hero-desc">
