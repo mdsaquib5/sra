@@ -95,7 +95,7 @@ const Hero = () => {
                         </p>
 
                         <div className="mt-20">
-                            <a href="#connect" className="btn-primary">
+                            <a href="https://www.instagram.com/rumman.vlogs?igsh=MTIxcmlkZnc0eWsxNQ%3D%3D" target='_blank' className="btn-primary">
                                 Connect Now <FiArrowUpRight size={20} />
                             </a>
                         </div>
