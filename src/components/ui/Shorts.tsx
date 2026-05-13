@@ -18,7 +18,6 @@ const reels = [
     { id: 5, videoUrl: "/video5.mp4" },
     { id: 6, videoUrl: "/video6.mp4" },
     { id: 7, videoUrl: "/video7.mp4" },
-    { id: 8, videoUrl: "/video8.mp4" },
 ];
 
 const VideoCard = ({ src, isActive }: { src: string; isActive: boolean }) => {
@@ -47,7 +46,7 @@ const VideoCard = ({ src, isActive }: { src: string; isActive: boolean }) => {
                 playsInline
                 controls
             />
-            {!isActive && <div className="video-overlay"></div>}
+            {/* {!isActive && <div className="video-overlay"></div>} */}
         </div>
     );
 };
