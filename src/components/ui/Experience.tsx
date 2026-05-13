@@ -30,7 +30,6 @@ const Experience = () => {
     return (
         <section className="experience-section" id="experience">
             <div className="container">
-                {/* Section Header */}
                 <motion.div
                     className="text-center"
                     initial={{ opacity: 0, y: 30 }}
@@ -45,14 +44,11 @@ const Experience = () => {
                     </p>
                 </motion.div>
 
-                {/* Timeline Container */}
                 <div className="timeline-container">
-                    {/* Path Line */}
                     <div className="timeline-path"></div>
 
                     {timelineData.map((item, index) => (
                         <div key={index} className={`timeline-item ${item.side === 'right' ? 'right' : ''}`}>
-                            {/* Node */}
                             <motion.div
                                 className="timeline-node"
                                 initial={{ scale: 0 }}
@@ -61,19 +57,12 @@ const Experience = () => {
                                 transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
                             ></motion.div>
 
-                            {/* Card */}
-                            <motion.div
-                                className="timeline-card"
-                                initial={{ opacity: 0, x: item.side === 'right' ? -50 : 50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true, margin: "-100px" }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                            >
+                            <div className="timeline-card">
                                 <span className="timeline-date">{item.date}</span>
                                 <h3>{item.role}</h3>
                                 <span className="timeline-company">{item.company}</span>
                                 <p className="timeline-desc">{item.desc}</p>
-                            </motion.div>
+                            </div>
                         </div>
                     ))}
                 </div>
